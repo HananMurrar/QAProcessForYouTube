@@ -1,0 +1,177 @@
+{
+  "id": "0eb45d84-091d-412f-9548-2d9a021c831c",
+  "version": "2.0",
+  "name": "Project",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "b917d922-2029-44f3-9369-21387833bb3d",
+    "name": "Test1",
+    "commands": [{
+      "id": "086b07eb-b320-4dbd-93ef-475077b19b95",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64613c89-a3fd-4ebd-9879-3624cda86a8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.topbar-icons div",
+      "targets": [
+        ["css=.topbar-icons div", "css:finder"],
+        ["xpath=(//button[@id='button']/yt-icon/span/div)[7]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/yt-icon-button/button/yt-icon/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f93b304a-f50f-4039-9521-8c62bf6b7cb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=.ytSearchboxComponentInput", "css:finder"],
+        ["xpath=//input[@name='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='center']/yt-searchbox/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4df2c93-8e4b-44ab-92a4-ea154cdf22bc",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=.ytSearchboxComponentInput", "css:finder"],
+        ["xpath=//input[@name='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='center']/yt-searchbox/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Technology"
+    }, {
+      "id": "b8dbb7f2-7c97-4252-9ca9-552ecb628df8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=.ytSearchboxComponentInput", "css:finder"],
+        ["xpath=//input[@name='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='center']/yt-searchbox/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1d0576ad-519d-4732-b98c-20b9effc40a6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=What is Technology?",
+      "targets": [
+        ["linkText=What is Technology?", "linkText"],
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=k_RtS3sag1Y&t=65s&pp=ygUKVGVjaG5vbG9neQ%3D%3D')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'What is Technology?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3764e56e-0e46-4674-8385-75970c7db03f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=What is Technology?",
+      "targets": [
+        ["linkText=What is Technology?", "linkText"],
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=k_RtS3sag1Y&t=65s&pp=ygUKVGVjaG5vbG9neQ%3D%3D')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'What is Technology?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9217a59c-ec1c-4cd8-89c2-82adae4d7d10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title > .style-scope:nth-child(2)",
+      "targets": [
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title > .style-scope:nth-child(2)", "css:finder"],
+        ["xpath=//a[@id='video-title']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/h3/a/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'What is Technology?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21242723-e4ec-441b-8d9d-9466c9096022",
+      "comment": "",
+      "command": "click",
+      "target": "css=#title > .ytd-watch-metadata > .style-scope",
+      "targets": [
+        ["css=#title > .ytd-watch-metadata > .style-scope", "css:finder"],
+        ["xpath=//div[@id='title']/h1/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//ytd-watch-metadata/div/div/h1/yt-formatted-string", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "698bc065-29d9-40bb-8d7e-769bba9c957a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#title > .ytd-watch-metadata > .style-scope",
+      "targets": [
+        ["css=#title > .ytd-watch-metadata > .style-scope", "css:finder"],
+        ["xpath=//div[@id='title']/h1/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//ytd-watch-metadata/div/div/h1/yt-formatted-string", "xpath:position"]
+      ],
+      "value": "What is Technology?"
+    }, {
+      "id": "d21dd697-ae4f-4efe-9d2e-3fa4f094c673",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#title > .ytd-watch-metadata > .style-scope",
+      "targets": [],
+      "value": "videoTitle"
+    }, {
+      "id": "c311a86e-6036-4027-b6e5-faa534b2a719",
+      "comment": "",
+      "command": "store",
+      "target": "Technology",
+      "targets": [],
+      "value": "searchKeyword"
+    }, {
+      "id": "3d558c9f-097f-44bd-933a-77c6e91e927a",
+      "comment": "",
+      "command": "runScript",
+      "target": "return '${videoTitle}'.includes('${searchKeyword}') ? 'true' : 'false'",
+      "targets": [],
+      "value": "containsKeyword"
+    }, {
+      "id": "f17bc4b3-8065-40e4-8560-3029606cc598",
+      "comment": "",
+      "command": "echo",
+      "target": "${searchKeyword}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4036f952-ecd4-426c-8a4f-2051d5e02521",
+      "comment": "",
+      "command": "echo",
+      "target": "${videoTitle}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2e961dff-917a-4952-94bd-518b9c6f9c5c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
